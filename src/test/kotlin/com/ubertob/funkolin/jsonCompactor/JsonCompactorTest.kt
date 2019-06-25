@@ -2,6 +2,7 @@ package com.ubertob.funkolin.jsonCompactor
 
 import assertk.assertThat
 import assertk.assertions.isEqualTo
+import com.ubertob.funkotlin.jsonCompactor.compactJson
 import org.junit.jupiter.api.Test
 
 class JsonCompactorTest {
@@ -14,7 +15,7 @@ class JsonCompactorTest {
 
         val expected = "{\"a\":20}"
 
-        assertThat(jsonText).isEqualTo(expected)
+        assertThat( compactJson( jsonText )).isEqualTo(expected)
 
     }
 

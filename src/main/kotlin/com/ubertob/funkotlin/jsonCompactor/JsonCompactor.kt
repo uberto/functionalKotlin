@@ -1,4 +1,3 @@
 package com.ubertob.funkotlin.jsonCompactor
 
-class JsonCompactor {
-}
+fun compactJson(jsonStr: String): String = ""
