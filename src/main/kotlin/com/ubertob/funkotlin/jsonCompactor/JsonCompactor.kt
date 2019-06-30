@@ -5,9 +5,10 @@ fun compactJson(json: Sequence<Char>): String =
    json.fold(OutQuotes(""), ::compactor).done
 
 
-
 fun compactor(prev: JsonCompactor, c: Char): JsonCompactor =
     prev.compact(c)
+
+
 
 
 sealed class JsonCompactor{
